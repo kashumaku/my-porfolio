@@ -1,0 +1,64 @@
+.topBar {
+  display: flex;
+  justify-content: space-evenly;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.toggleTheme {
+  display: flex;
+  align-items: center;
+}
+.toggleIcon {
+  font-size: 35px;
+  transform: rotate(-25deg);
+}
+.toggleIcon.day {
+  color: white;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.topBarMenu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.navLink {
+  font-size: 20px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+.navLink:hover {
+  color: rgb(255, 123, 0);
+}
+.smallMenu {
+  display: none;
+}
+@media (max-width: 400px) {
+  .topBar {
+    width: 100vw;
+  }
+  .smallMenu {
+    display: block;
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .navLink {
+    display: none;
+  }
+  .logo {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+  }
+}

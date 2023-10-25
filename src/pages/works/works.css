@@ -1,0 +1,31 @@
+.works {
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+.workclip {
+  clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+  background-color: var(--clippath);
+  position: absolute;
+  height: 100%;
+  width: 50%;
+}
+.workContainer {
+  display: flex;
+  width: 90%;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.workdesc {
+  width: 50%;
+  margin: 30px;
+}
+.workcards {
+  width: 100%;
+  border-radius: 20px;
+
+  display: flex;
+  overflow: scroll;
+}

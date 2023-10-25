@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+:root {
+  --gray: rgb(107, 106, 106);
+  --crimson: rgb(177, 65, 87);
+  --orange: orange;
+  --background: aqua;
+  --clippath: rgb(10, 92, 67);
+  --nightMode: rgb(54, 53, 53);
+}
+
+.dayMode {
+  color: var(--nightMode);
+  background-color: white;
+  transition: all 1.5s;
+}
+.nightMode {
+  color: white;
+  background-color: var(--nightMode);
+  transition: all 1.5s;
+}
